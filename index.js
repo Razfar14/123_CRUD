@@ -54,7 +54,18 @@ app.put('/', (req, res) => {
         });
     })
 
-       
+app.delete('/', (req, res) => {
+    const { id } = req.body;
+    pool.query('DELETE FROM Biodata WHERE id = $1', [id])
+        .then(() => {
+            res.send('Data berhasil dihapus');
+        })
+        .catch(err => {
+            console.error('Error executing query', err.stack);
+            res.status(500).send('Error executing query');
+        });
+    })
+        
 
 
 app.listen(port, () => {
