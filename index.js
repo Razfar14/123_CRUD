@@ -3,7 +3,6 @@ import pg from 'pg';
 
 const app = express();
 const port = 3000;
-const {Pool} = pg
 
 app.use(express.json ());
 app.use(
@@ -31,6 +30,22 @@ app.get('/', (req, res) => {
         });
 });
 
+app.post('/', (req, res) => {
+    const { nama, nim, kelas } = req.body;
+    pool.query('INSERT INTO Biodata (nama, nim, kelas) VALUES ($1, $2, $3)', [nama, nim, kelas])
+        .then(() => {
+            res.status(201).send('Data berhasil ditambahkan');
+        })
+        .catch(err => {
+            console.error('Error executing query', err.stack);
+            res.status(500).send('Error executing query');
+        });
+});
+
+
+       
+
+
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
-});
+})
