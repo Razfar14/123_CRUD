@@ -3,3 +3,7 @@ Fungsi Get
 <img width="1919" height="1025" alt="image" src="https://github.com/user-attachments/assets/515d2038-bc55-4a3a-80c0-9b6c55dd6212" />
 <img width="1919" height="1020" alt="image" src="https://github.com/user-attachments/assets/9a6e0ae8-45b8-4871-aa49-109f8883d0ea" />
 Fungsi Post
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/b581ac4e-7f4d-4511-8c67-bd18a3dbadfc" />
+<img width="1905" height="1022" alt="image" src="https://github.com/user-attachments/assets/bce6d665-1a31-4363-912e-f362643743c5" />
+Fungsi Put
+
