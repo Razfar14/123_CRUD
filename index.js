@@ -42,6 +42,17 @@ app.post('/', (req, res) => {
         });
 });
 
+app.put('/', (req, res) => {
+    const { id, nama, nim, kelas } = req.body;
+    pool.query('UPDATE Biodata SET nama = $1, nim = $2, kelas = $3 WHERE id = $4', [nama, nim, kelas, id])
+        .then(() => {
+            res.send('Data berhasil diperbarui');
+        })
+        .catch(err => {
+            console.error('Error executing query', err.stack);
+            res.status(500).send('Error executing query');
+        });
+    })
 
        
 
