@@ -6,4 +6,6 @@ Fungsi Post
 <img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/b581ac4e-7f4d-4511-8c67-bd18a3dbadfc" />
 <img width="1905" height="1022" alt="image" src="https://github.com/user-attachments/assets/bce6d665-1a31-4363-912e-f362643743c5" />
 Fungsi Put
-
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/894268e7-ec52-4843-8deb-6e07e8da4c6b" />
+<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/30df8586-5ac0-4bda-905a-ba1ecc1aa2db" />
+Fungsi Delete
